@@ -1,0 +1,1 @@
+arr = [1, 2, 3, 4, 5, 6, 7]d = 2l = len(arr)def swap(arr, i, j):    tmp = arr[i]    arr[i] = arr[j]    arr[j] = tmpdef swapblock(arr, i, j):    while i < j:        swap(arr, i, j)        i += 1        j -= 1print (arr)swapblock(arr, 0, d - 1)swapblock(arr, d, l-1)swapblock(arr, 0, l-1)print(arr)
